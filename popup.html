@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 300px;
+        padding: 10px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <label>Enable for this site:</label>
+        <input type="checkbox" id="enableSwitch" />
+      </div>
+      <div class="row">
+        <input type="text" id="findText" placeholder="Text to find" />
+        <input type="text" id="replaceText" placeholder="Replace with" />
+      </div>
+      <button id="saveButton">Save</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
