@@ -28,6 +28,7 @@ function replaceText(node) {
         continue;
       }
 
+      // Simple string replacement
       if (currentNode.nodeValue.includes(config.findText)) {
         const oldValue = currentNode.nodeValue;
         currentNode.nodeValue = currentNode.nodeValue.replaceAll(
